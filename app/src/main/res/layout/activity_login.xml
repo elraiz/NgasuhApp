@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBlue"
+    android:padding="@dimen/dimen30"
+    tools:context=".ngasuhapp.LoginActivity">
+
+
+    <LinearLayout
+        android:id="@+id/lin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen16"
+            app:srcCompat="@drawable/ic_child_friendly" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/dimen5"
+            android:textColor="@color/colorWhite"
+            android:textStyle="italic"
+            android:textSize="@dimen/font20"
+            android:text="@string/tagline" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/dimen5"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font14"
+            android:text="@string/tagline_desc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/dimen30"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font20"
+            android:text="@string/login" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/dimen20"
+            android:layout_height="@dimen/dimen3"
+            android:layout_marginTop="@dimen/dimen10"
+            android:background="@color/colorWhite"/>
+
+        <EditText
+            android:id="@+id/edt_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen50"
+            android:layout_marginLeft="@dimen/dimen50"
+            android:layout_marginTop="@dimen/dimen20"
+            android:layout_marginEnd="@dimen/dimen50"
+            android:layout_marginRight="@dimen/dimen50"
+            android:backgroundTint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/username"/>
+
+        <EditText
+            android:id="@+id/edt_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen50"
+            android:layout_marginLeft="@dimen/dimen50"
+            android:layout_marginTop="@dimen/dimen20"
+            android:layout_marginEnd="@dimen/dimen50"
+            android:layout_marginRight="@dimen/dimen50"
+            android:backgroundTint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/password"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen50"
+            android:layout_marginLeft="@dimen/dimen50"
+            android:layout_marginTop="@dimen/dimen20"
+            android:layout_marginEnd="@dimen/dimen50"
+            android:layout_marginRight="@dimen/dimen50"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorWhite"
+            android:text="@string/forget" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/txt_login_masuk"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen40"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="@dimen/dimen50"
+            android:layout_marginLeft="@dimen/dimen50"
+            android:layout_marginTop="@dimen/dimen20"
+            android:layout_marginEnd="@dimen/dimen50"
+            android:layout_marginRight="@dimen/dimen50"
+            android:background="@drawable/bg_btn_masuk"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/masuk"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_login_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen50"
+            android:layout_marginLeft="@dimen/dimen50"
+            android:layout_marginTop="@dimen/dimen12"
+            android:layout_marginEnd="@dimen/dimen50"
+            android:layout_marginRight="@dimen/dimen50"
+            android:gravity="center_horizontal"
+            android:clickable="true"
+            android:text="@string/daftar"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+</RelativeLayout>
